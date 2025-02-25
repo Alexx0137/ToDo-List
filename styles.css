@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Contenedor de entrada */
+.input-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#nuevaTarea {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#nuevaTarea:focus {
+    border-color: #007bff;
+}
+
+#agregarTarea {
+    padding: 0.75rem 1.25rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#agregarTarea:hover {
+    background-color: #0056b3;
+}
+
+/* Lista de tareas */
+#listaTareas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTareas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+#listaTareas li:last-child {
+    border-bottom: none;
+}
+
+#listaTareas li:hover {
+    background-color: #f8f9fa;
+}
+
+#listaTareas li span {
+    flex: 1;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+#listaTareas li .actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#listaTareas li button {
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#listaTareas li button.edit {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#listaTareas li button.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#listaTareas li button:hover {
+    transform: translateY(-1px);
+}
+
+#listaTareas li button.edit:hover {
+    background-color: #218838;
+}
+
+#listaTareas li button.delete:hover {
+    background-color: #c82333;
+}
